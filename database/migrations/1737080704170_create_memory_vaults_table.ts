@@ -10,8 +10,8 @@ export default class extends BaseSchema {
       table.string('location').nullable() // Nullable location
       table.date('date').notNullable() // Memory date
       table.text('memory').notNullable() // Required memory content
-      table.json('tags').nullable() // Tags as JSON (nullable)
-      table.json('attachment').nullable() // Attachments as JSON (nullable)
+      table.text('tags').nullable() // Tags as JSON (nullable)
+      table.text('attachment').nullable() // Attachments as JSON (nullable)
 
       table.timestamps(true, true) 
     })
